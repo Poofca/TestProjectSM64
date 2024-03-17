@@ -839,6 +839,20 @@ void cur_obj_update(void) {
         distanceFromMario = 0.0f;
     }
 
+    // Should Fix Bowling Ball Issue
+    if (o->collisionData == NULL &&  (objFlags & OBJ_FLAG_COMPUTE_DIST_TO_MARIO) && !(objFlags & OBJ_FLAG_ACTIVE_FROM_AFAR)) {
+        // If the object has a render distance, check if it should be shown.
+        if (distanceFromMario > o->oDrawingDistance) {
+            // Out of render distance, hide the object.
+            o->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
+            //o->activeFlags |= ACTIVE_FLAG_FAR_AWAY;
+        } else if (o->oHeldState == HELD_FREE) {
+            // In render distance (and not being held), show the object.
+            o->header.gfx.node.flags |= GRAPH_RENDER_ACTIVE;
+            o->activeFlags &= ~ACTIVE_FLAG_FAR_AWAY;
+        }
+    }
+
     // Calculate the angle from the object to Mario.
     if (objFlags & OBJ_FLAG_COMPUTE_ANGLE_TO_MARIO) {
         o->oAngleToMario = obj_angle_to_object(o, gMarioObject);
@@ -942,7 +956,7 @@ void cur_obj_update(void) {
             o->activeFlags &= ~ACTIVE_FLAG_FAR_AWAY;
         } else {
             o->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
-            o->activeFlags |= ACTIVE_FLAG_FAR_AWAY;
+            // o->activeFlags |= ACTIVE_FLAG_FAR_AWAY;
         }
     } else if (
         o->collisionData == NULL
@@ -953,7 +967,7 @@ void cur_obj_update(void) {
         if (distanceFromMario > o->oDrawingDistance) {
             // Out of render distance, hide the object.
             o->header.gfx.node.flags &= ~GRAPH_RENDER_ACTIVE;
-            o->activeFlags |= ACTIVE_FLAG_FAR_AWAY;
+            // o->activeFlags |= ACTIVE_FLAG_FAR_AWAY;
         } else if (o->oHeldState == HELD_FREE) {
             // In render distance (and not being held), show the object.
             o->header.gfx.node.flags |= GRAPH_RENDER_ACTIVE;

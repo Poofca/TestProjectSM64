@@ -37,6 +37,7 @@ extern const Collision castle_grounds_seg7_collision_cannon_grill[];
 extern const struct MovtexQuadCollection castle_grounds_movtex_water[];
 extern Movtex castle_grounds_movtex_tris_waterfall[];
 extern const Gfx castle_grounds_dl_waterfall[];
+extern const Trajectory castle_grounds_area_2_spline_ballpath[];
 
 // script
 extern const LevelScript level_castle_grounds_entry[];

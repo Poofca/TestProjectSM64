@@ -708,7 +708,7 @@ u32 take_damage_and_knock_back(struct MarioState *m, struct Object *obj) {
         damage = take_damage_from_interact_object(m);
 
         if (obj->oInteractionSubtype & INT_SUBTYPE_BIG_KNOCKBACK) {
-            m->forwardVel = 40.0f;
+            m->forwardVel = 100.0f;
         }
 
         if (obj->oDamageOrCoinValue > 0) {
