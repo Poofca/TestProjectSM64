@@ -84,7 +84,7 @@ void bowling_ball_set_waypoints(void) {
             break;
         
         case BBALL_BP_STYPE_CG:
-            o->oPathedStartWaypoint = segmented_to_virtual(castle_grounds_area_2_spline_ballpath);
+            o->oPathedStartWaypoint = segmented_to_virtual(castle_courtyard_area_2_spline_ballpath);
             break;
     }
 }

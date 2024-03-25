@@ -35,6 +35,7 @@ s16 sCoinArrowPositions[][2] = {
 s32 bhv_coin_sparkles_init(void) {
     if (o->oInteractStatus & INT_STATUS_INTERACTED
         && !(o->oInteractStatus & INT_STATUS_TOUCHED_BOB_OMB)) {
+        gHudDisplay.timer -= 120;
         spawn_object(o, MODEL_SPARKLES, bhvCoinSparklesSpawner);
         obj_mark_for_deletion(o);
         return TRUE;
@@ -231,7 +232,7 @@ void bhv_coin_formation_loop(void) {
 
     switch (o->oAction) {
         case COIN_FORMATION_ACT_INACTIVE:
-            if (o->oDistanceToMario < COIN_FORMATION_DISTANCE) {
+            if (o->oDistanceToMario < 32000.f) {
                 for (bitIndex = 0; bitIndex < 8; bitIndex++) {
                     if (!(o->oCoinRespawnBits & (1 << bitIndex))) {
                         spawn_coin_in_formation(bitIndex, o->oBehParams2ndByte);
@@ -241,7 +242,7 @@ void bhv_coin_formation_loop(void) {
             }
             break;
         case COIN_FORMATION_ACT_ACTIVE:
-            if (o->oDistanceToMario > (COIN_FORMATION_DISTANCE + 100.0f)) {
+            if (o->oDistanceToMario > (32000.f)) {
                 o->oAction = COIN_FORMATION_ACT_DEACTIVATE;
             }
             break;

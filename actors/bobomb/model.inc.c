@@ -267,6 +267,7 @@ static const Vtx bobomb_seg8_vertex_08023190[] = {
 
 // 0x08023270 - 0x08023378
 const Gfx bobomb_seg8_dl_08023270[] = {
+    gsDPSetCombineMode(G_CC_SHADE, G_CC_SHADE),
     gsSPLightColor(LIGHT_1, 0xff9912ff),
     gsSPLightColor(LIGHT_2, 0x3f2604ff),
     gsSPVertex(bobomb_seg8_vertex_08022E30, 16, 0),

@@ -41,9 +41,6 @@
     "0B_event_piranha_plant": [
         "14_piranha_music_box"
     ],
-    "0C_level_underground": [
-        "15"
-    ],
     "0D_menu_star_select": [
         "16_course_start"
     ],
@@ -114,11 +111,14 @@
             "1B"
         ]
     },
+    "03_level_grass": [
+        "casinopark"
+    ],
+    "0C_level_underground": [
+        "wind_strong_loop"
+    ],
     "04_level_inside_castle": [
         "luigicasino"
-    ],
-    "03_level_grass": [
-        "casino_park"
     ],
     "21_menu_file_select": [
         "staledit"

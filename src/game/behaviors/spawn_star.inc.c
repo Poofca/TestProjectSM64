@@ -34,6 +34,8 @@ void bhv_collect_star_loop(void) {
 
     if (o->oInteractStatus & INT_STATUS_INTERACTED) {
         obj_mark_for_deletion(o);
+        level_control_timer(TIMER_CONTROL_STOP);
+        save_file_do_save(gCurrSaveFileNum - 1);
         o->oInteractStatus = INT_STATUS_NONE;
     }
 }

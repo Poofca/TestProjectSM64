@@ -10,9 +10,9 @@
  *      3: Bowser keys and the grand star
  *      4: Default, used for 100 coin stars, 8 red coin stars in bowser levels, and secret stars
  */
-DEFINE_COURSE(COURSE_NONE, 0x44444440) // (0)  Course Hub (Castle Grounds)
+DEFINE_COURSE(COURSE_NONE, 0x04444440) // (0)  Course Hub (Castle Grounds)
 DEFINE_COURSE(COURSE_BOB, 0x44444440) // (1)  Bob Omb Battlefield
-DEFINE_COURSE(COURSE_WF, 0x00002040) // (2)  Whomp's Fortress
+DEFINE_COURSE(COURSE_WF, 0x44444440) // (2)  Whomp's Fortress
 DEFINE_COURSE(COURSE_JRB, 0x22222240) // (3)  Jolly Rodger's Bay
 DEFINE_COURSE(COURSE_CCM, 0x00220040) // (4)  Cool Cool Mountain
 DEFINE_COURSE(COURSE_BBH, 0x22222240) // (5)  Big Boo's Haunt
@@ -33,7 +33,7 @@ DEFINE_BONUS_COURSE(COURSE_BITS, 0x34444440) // (18) Bowser in the Sky
 DEFINE_BONUS_COURSE(COURSE_PSS, 0x44444440) // (19) Princess's Secret Slide
 DEFINE_BONUS_COURSE(COURSE_COTMC, 0x44444440) // (20) Cavern of the Metal Cap
 DEFINE_BONUS_COURSE(COURSE_TOTWC, 0x04444440) // (21) Tower of the Wing Cap
-DEFINE_BONUS_COURSE(COURSE_VCUTM, 0x24444440) // (22) Vanish Cap Under the Moat
+DEFINE_BONUS_COURSE(COURSE_VCUTM, 0x44444440) // (22) Vanish Cap Under the Moat
 DEFINE_BONUS_COURSE(COURSE_WMOTR, 0x04444440) // (23) Winged Mario over the Rainbow
-DEFINE_BONUS_COURSE(COURSE_SA, 0x24444440) // (24) Secret Aquarium
+DEFINE_BONUS_COURSE(COURSE_SA, 0x44444440) // (24) Secret Aquarium
 DEFINE_BONUS_COURSE(COURSE_CAKE_END, 0x44444440) // (25) The End (Cake Scene)

@@ -444,11 +444,16 @@ void render_hud_keys(void) {
  * Renders the timer when Mario start sliding in PSS.
  */
 void render_hud_timer(void) {
-    Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
+    //Texture *(*hudLUT)[58] = segmented_to_virtual(&main_hud_lut);
     u16 timerValFrames = gHudDisplay.timer;
-    u16 timerMins = timerValFrames / (30 * 60);
-    u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
-    u16 timerFracSecs = ((timerValFrames - (timerMins * 1800) - (timerSecs * 30)) & 0xFFFF) / 3;
+    //u16 timerMins = timerValFrames / (30 * 60);
+    //u16 timerSecs = (timerValFrames - (timerMins * 1800)) / 30;
+    //u16 timerFracSecs = ((timerValFrames - (timerMins * 1800) - (timerSecs * 30)) & 0xFFFF) / 3;
+    u16 timerDebtNum = timerValFrames * (5.f/2.f);
+    // 1 frame = 2.5 debt timer
+    // 4 frame = 10dt, 1 sec (30) = 75dt, 2 sec (60) = 150, 10 sec (300) = 750dt
+    // 12.5 sec (400) = 1k dt, 20 sec (600) = 1.5k dt, 1 min (1800)= 4.5k dt
+    // 10k dt = 4000 frames
 
 #if MULTILANG
     switch (eu_get_language()) {
@@ -457,16 +462,25 @@ void render_hud_timer(void) {
         case LANGUAGE_GERMAN:  print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(150), 185,  "ZEIT"); break;
     }
 #else
-    print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(150), 185, "TIME");
+    //print_small_text(16, 16, "DEBT:", PRINT_TEXT_ALIGN_LEFT, PRINT_ALL, FONT_VANILLA);
 #endif
 
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 185, "%0d", timerMins);
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(71), 185, "%02d", timerSecs);
-    print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(37), 185, "%d", timerFracSecs);
+    //print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 185, "%0d", timerMins);
+    //print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(71), 185, "%02d", timerSecs);
+    //char output[20];
+    //sprintf(output, "%f", timerDebtNum);
+    if ((timerValFrames < 4000) || (timerValFrames > 10000)) {
+        print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(10), 200, "DXBZQ-");
+        print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(87), 200, "%d", timerDebtNum);
+    } else {
+        print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(10), 200, "DXBZQJ");
+        print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(87), 200, "VYYYY");
+    }
+    //print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 165, "%d", timerValFrames);
 
     gSPDisplayList(gDisplayListHead++, dl_hud_img_begin);
-    render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(81), 32, (*hudLUT)[GLYPH_APOSTROPHE]);
-    render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(46), 32, (*hudLUT)[GLYPH_DOUBLE_QUOTE]);
+    //render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(81), 32, (*hudLUT)[GLYPH_APOSTROPHE]);
+    //render_hud_tex_lut(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(46), 32, (*hudLUT)[GLYPH_DOUBLE_QUOTE]);
     gSPDisplayList(gDisplayListHead++, dl_hud_img_end);
 }
 
@@ -563,11 +577,11 @@ void render_hud(void) {
 #endif
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_COIN_COUNT) {
-            render_hud_coins();
+            //render_hud_coins();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_STAR_COUNT) {
-            render_hud_stars();
+            //render_hud_stars();
         }
 
         if (hudDisplayFlags & HUD_DISPLAY_FLAG_KEYS) {
@@ -583,7 +597,7 @@ void render_hud(void) {
 #ifdef PUPPYCAM
             if (!gPuppyCam.enabled) {
 #endif
-            render_hud_camera_status();
+            //render_hud_camera_status();
 #ifdef PUPPYCAM
             }
 #endif

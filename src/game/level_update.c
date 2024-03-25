@@ -1,3 +1,4 @@
+#include "texscroll.h"
 #include <ultra64.h>
 
 #include "sm64.h"
@@ -142,6 +143,7 @@ s16 sSourceWarpNodeId;
 s32 sDelayedWarpArg;
 s8 sTimerRunning;
 s8 gNeverEnteredCastle;
+s8 FailStateTriggered;
 // Prevent multiple 100 coin stars from spawning
 u8 g100CoinStarSpawned = FALSE;
 
@@ -152,8 +154,10 @@ u16 level_control_timer(s32 timerOp) {
     switch (timerOp) {
         case TIMER_CONTROL_SHOW:
             gHudDisplay.flags |= HUD_DISPLAY_FLAG_TIMER;
-            sTimerRunning = FALSE;
-            gHudDisplay.timer = 0;
+            //sTimerRunning = FALSE;
+            gHudDisplay.timer = 400;
+            //gHudDisplay.timer = 3900;
+            FailStateTriggered = FALSE;
             break;
 
         case TIMER_CONTROL_START:
@@ -165,9 +169,9 @@ u16 level_control_timer(s32 timerOp) {
             break;
 
         case TIMER_CONTROL_HIDE:
-            gHudDisplay.flags &= ~HUD_DISPLAY_FLAG_TIMER;
-            sTimerRunning = FALSE;
-            gHudDisplay.timer = 0;
+            //gHudDisplay.flags &= ~HUD_DISPLAY_FLAG_TIMER;
+            //sTimerRunning = FALSE;
+            //gHudDisplay.timer = 0;
             break;
     }
 
@@ -351,6 +355,7 @@ void set_mario_initial_action(struct MarioState *m, u32 spawnType, u32 actionArg
 void init_mario_after_warp(void) {
     struct ObjectWarpNode *spawnNode = area_get_warp_node(sWarpDest.nodeId);
     u32 marioSpawnType = get_mario_spawn_type(spawnNode->object);
+    gHudDisplay.timer += 400;
 
     if (gMarioState->action != ACT_UNINITIALIZED) {
         gPlayerSpawnInfos[0].startPos[0] = (s16) spawnNode->object->oPosX;
@@ -770,8 +775,12 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                 if ((m->floor) && (m->floor->force & 0xFF)) {
                     sSourceWarpNodeId = m->floor->force & 0xFF;
                 } else {
-                    sSourceWarpNodeId = WARP_NODE_WARP_FLOOR;
-                    if (area_get_warp_node(sSourceWarpNodeId) == NULL) {
+                    if (m->floor->type != SURFACE_DEATH_PLANE) {
+                        sSourceWarpNodeId = m->floor->force;
+                }
+                    else{
+                        sSourceWarpNodeId = WARP_NODE_WARP_FLOOR;
+                        if (area_get_warp_node(sSourceWarpNodeId) == NULL) {
 #ifdef ENABLE_LIVES
                         if (m->numLives == 0) {
                             sDelayedWarpOp = WARP_OP_GAME_OVER;
@@ -779,8 +788,9 @@ s16 level_trigger_warp(struct MarioState *m, s32 warpOp) {
                             sSourceWarpNodeId = WARP_NODE_DEATH;
                         }
 #else
-                        sSourceWarpNodeId = WARP_NODE_DEATH;
+                            sSourceWarpNodeId = WARP_NODE_DEATH;
 #endif
+                        }
                     }                    
                 }
 
@@ -1019,13 +1029,25 @@ s32 play_mode_normal(void) {
     if (sPPDebugPage != PUPPYPRINT_PAGE_RAM && sPPDebugPage != PUPPYPRINT_PAGE_LEVEL_SELECT) {
 #endif
         if (sTimerRunning && gHudDisplay.timer < 17999) {
-            gHudDisplay.timer++;
+            ++;
         }
         area_update_objects();
     }
 #else
+    if ((gHudDisplay.timer <= 0) || (gHudDisplay.timer >= 17999)){
+        gHudDisplay.timer = 0;
+    }
     if (sTimerRunning && gHudDisplay.timer < 17999) {
         gHudDisplay.timer++;
+    }
+    if ((gHudDisplay.timer >= 4000) && !(FailStateTriggered)) {
+        level_control_timer(TIMER_CONTROL_STOP);
+        sDelayedWarpOp = 0x0A;
+        sDelayedWarpTimer = 20;
+        sSourceWarpNodeId = 0x0C;
+        level_trigger_warp(NULL, sSourceWarpNodeId);
+        play_transition(WARP_TRANSITION_FADE_INTO_COLOR, 0x14, 0x00, 0x00, 0x00);
+        FailStateTriggered = TRUE;
     }
     area_update_objects();
 #endif
@@ -1195,7 +1217,7 @@ s32 update_level(void) {
 
     switch (sCurrPlayMode) {
         case PLAY_MODE_NORMAL:
-            changeLevel = play_mode_normal();
+            changeLevel = play_mode_normal(); scroll_textures();
             break;
         case PLAY_MODE_PAUSED:
             changeLevel = play_mode_paused();
@@ -1377,6 +1399,10 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
     sWarpCheckpointActive = FALSE;
     gCurrLevelNum = levelNum;
     gCurrCourseNum = gLevelToCourseNumTable[levelNum - 1];
+	if (gCurrLevelNum == LEVEL_SA) return 0;
+	if (gCurrLevelNum == LEVEL_VCUTM) return 0;
+	if (gCurrLevelNum == LEVEL_WF) return 0;
+	if (gCurrLevelNum == LEVEL_CASTLE_COURTYARD) return 0;
 	if (gCurrLevelNum == LEVEL_PSS) return 0;
 	if (gCurrLevelNum == LEVEL_BOB) return 0;
 

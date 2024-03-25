@@ -26,4 +26,5 @@ extern Gfx bob_dl_Cube_mesh_layer_1[];
 extern Gfx bob_dl_Cube_001_mesh_layer_1[];
 extern Gfx bob_dl_Floaty_Blue_Cube_mesh_layer_1[];
 extern Gfx bob_dl_Plane_mesh_layer_1[];
-extern const Trajectory castle_grounds_area_2_spline_ballpath[];
+extern const Trajectory castle_courtyard_area_2_spline_ballpath[];
+

@@ -27,7 +27,7 @@ extern const Collision bob_seg7_collision_gate[];
 extern const Trajectory bob_seg7_metal_ball_path0[];
 extern const Trajectory bob_seg7_metal_ball_path1[];
 extern const Trajectory bob_seg7_trajectory_koopa[];
-extern const Trajectory castle_grounds_area_2_spline_ballpath[];
+extern const Trajectory castle_courtyard_area_2_spline_ballpath[];
 
 // script
 extern const LevelScript level_bob_entry[];

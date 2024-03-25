@@ -12,91 +12,40 @@
 #define SCRAM "scram--"
 #endif
 
-DEFINE_DIALOG(DIALOG_000, 1, 6, 30, 200, _("\
-Wow! You're smack in the\n\
-middle of the battlefield.\n\
-You'll find the Power\n\
-Stars that Bowser stole\n\
-inside the painting\n\
-worlds.\n\
-First, talk to the\n\
-Bob-omb Buddy. (Press [B]\n\
-to talk.) He'll certainly\n\
-help you out, and so will\n\
-his " COMRADES " in other\n\
-areas.\n\
-To read signs, stop, face\n\
-them and press [B]. Press [A]\n\
-or [B] to scroll ahead. You\n\
-can talk to some other\n\
-characters by facing them\n\
-and pressing [B]."))
+DEFINE_DIALOG(DIALOG_000, 1, 4, 30, 200, _("\
+One of these days,\n\
+when I win enough money,\n\
+I'll make my own secret\n\
+underground society!\n\
+Cave property rights are\n\
+so expensive nowadays..."))
 
-DEFINE_DIALOG(DIALOG_001, 1, 4, 95, 200, _("\
-Watch out! If you wander\n\
-around here, you're liable\n\
-to be " PLASTERED " by a\n\
-water bomb!\n\
-Those enemy Bob-ombs love\n\
-to fight, and they're\n\
-always finding ways to\n\
-attack.\n\
-This meadow has become\n\
-a battlefield ever since\n\
-the Big Bob-omb got his\n\
-paws on the Power Star.\n\
-Can you recover the Star\n\
-for us? Cross the bridge\n\
-and go left up the path\n\
-to find the Big Bob-omb.\n\
-Please come back to see\n\
-me after you've retrieved\n\
-the Power Star!"))
+DEFINE_DIALOG(DIALOG_001, 1, 4, 30, 200, _("\
+Heh heh heh... \n\
+They all have no clue\n\
+that I'm cheating,\n\
+I'm so smart!"))
 
-DEFINE_DIALOG(DIALOG_002, 1, 4, 95, 200, _("\
-Hey, you! It's dangerous\n\
-ahead, so listen up! Take\n\
-my advice.\n\
-\n\
-Cross the two\n\
-bridges ahead, then\n\
-watch for falling\n\
-water bombs.\n\
-The Big Bob-omb at the\n\
-top of the mountain is\n\
-very powerful--don't let\n\
-him grab you!\n\
-We're Bob-omb Buddies,\n\
-and we're on your side.\n\
-You can talk to us\n\
-whenever you'd like to!"))
+DEFINE_DIALOG(DIALOG_002, 1, 4, 30, 200, _("\
+That Fly Guy is so\n\
+blatantly cheating that\n\
+it's painful, he was\n\
+practically all the way\n\
+over the table earlier,\n\
+just staring at my\n\
+cards for ages!"))
 
-DEFINE_DIALOG(DIALOG_003, 1, 5, 95, 200, _("\
-Thank you, Mario! The Big\n\
-Bob-omb is nothing but a\n\
-big dud now! But the\n\
-battle for the castle has\n\
-just begun.\n\
-Other enemies are holding\n\
-the other Power Stars. If\n\
-you recover more Stars,\n\
-you can open new doors\n\
-that lead to new worlds!\n\
-My Bob-omb Buddies are\n\
-waiting for you. Be sure\n\
-to talk to them--they'll\n\
-set up cannons for you."))
+DEFINE_DIALOG(DIALOG_003, 1, 4, 30, 200, _("\
+This is an outrage!\n\
+Who does that Fly Guy\n\
+think he is? How does\n\
+the dealer let this slide!?"))
 
-DEFINE_DIALOG(DIALOG_004, 1, 3, 95, 200, _("\
-We're peace-loving\n\
-Bob-ombs, so we don't use\n\
-cannons.\n\
-But if you'd like\n\
-to blast off, we don't\n\
-mind. Help yourself.\n\
-We'll prepare all of the\n\
-cannons in this course for\n\
-you to use. Bon Voyage!"))
+DEFINE_DIALOG(DIALOG_004, 1, 4, 30, 200, _("\
+Woah, that Fly Guy\n\
+is so good! I wonder\n\
+where he learnt to\n\
+play that well?"))
 
 DEFINE_DIALOG(DIALOG_005, 1, 3, 30, 200, _("\
 Hey, Mario! Is it true\n\
@@ -134,18 +83,14 @@ Here you go--you've won\n\
 it, fair and square!"))
 
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
-BEWARE OF CHAIN CHOMP\n\
-Extreme Danger!\n\
-Get close and press [C]^\n\
-for a better look.\n\
-Scary, huh?\n\
-See the Red Coin on top\n\
-of the stake?\n\
-\n\
-When you collect eight of\n\
-them, a Power Star will\n\
-appear in the meadow\n\
-across the bridge."))
+This damn Pink Guy...\n\
+He looks so happy, he\n\
+just thinks that is\n\
+something he can, huh?\n\
+He's taken so much\n\
+from me, all of my\n\
+time, it's so much\n\
+later in the day now."))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\
@@ -219,56 +164,32 @@ Do you want to Save?\n\
 \n\
 //You Bet//Not Now"))
 
-DEFINE_DIALOG(DIALOG_015, 1, 4, 30, 200, _("\
-You can punch enemies to\n\
-knock them down. Press [A]\n\
-to jump, [B] to punch.\n\
-Press [A] then [B] to Kick.\n\
-To pick something up,\n\
-press [B], too. To throw\n\
-something you're holding,\n\
-press [B] again."))
-
-DEFINE_DIALOG(DIALOG_016, 1, 3, 30, 200, _("\
-Hop on the shiny shell and\n\
-ride wherever you want to\n\
-go! Shred those enemies!"))
-
-DEFINE_DIALOG(DIALOG_017, 1, 4, 30, 200, _("\
-I'm the Big Bob-omb, lord\n\
-of all blasting matter,\n\
-king of ka-booms the\n\
-world over!\n\
-How dare you scale my\n\
-mountain? By what right\n\
-do you set foot on my\n\
-imperial mountaintop?\n\
-You may have eluded my\n\
-guards, but you'll never\n\
-escape my grasp...\n\
+DEFINE_DIALOG(DIALOG_015, 1, 2, 30, 200, _("\
+Oh! Did you want to\n\
+play with me?\n\
+No?\n\
 \n\
-...and you'll never take\n\
-away my Power Star. I\n\
-hereby challenge you,\n\
-Mario!\n\
-If you want the Star I\n\
-hold, you must prove\n\
-yourself in battle.\n\
-\n\
-Can you pick me up from\n\
-the back and hurl me to\n\
-this royal turf? I think\n\
-that you cannot!"))
+That's alright,\n\
+no one does...\n\
+:("))
+
+DEFINE_DIALOG(DIALOG_016, 1, 1, 30, 200, _("\
+KOOPA POOL!!!\n\
+WOO!!!"))
+
+DEFINE_DIALOG(DIALOG_017, 1, 1, 30, 200, _("\
+WE ARE KOOPAS!!!\n\
+WE PLAY POOL!!!"))
 
 DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
-I'm sleeping because...\n\
-...I'm sleepy. I don't\n\
-like being disturbed.\n\
-Please walk quietly."))
+Guys please calm down\n\
+we're gonna get kicked\n\
+out please guys calm\n\
+down I'm so sorry."))
 
-DEFINE_DIALOG(DIALOG_019, 1, 2, 30, 200, _("\
-Shhh! Please walk\n\
-quietly in the hallway!"))
+DEFINE_DIALOG(DIALOG_019, 1, 1, 30, 200, _("\
+WE ARE KOOPAS!!!\n\
+WE PLAY POOL!!!"))
 
 DEFINE_DIALOG(DIALOG_020, 1, 6, 95, 150, _("\
 Dear Mario:\n\
@@ -368,107 +289,31 @@ hand over this Star to\n\
 the winner of the race.\n\
 Congrats, Mario!"))
 
-DEFINE_DIALOG(DIALOG_032, 1, 5, 30, 200, _("\
-If you get the Wing Cap,\n\
-you can fly! Put the cap\n\
-on, then do a Triple\n\
-Jump--jump three times\n\
-in a row--to take off.\n\
-You can fly even higher\n\
-if you blast out of a\n\
-cannon wearing the\n\
-Wing Cap!\n\
+DEFINE_DIALOG(DIALOG_032, 1, 3, 30, 200, _("\
+Back off, bro!\n\
 \n\
-Use the [C] Buttons to look\n\
-around while flying, and\n\
-press [Z] to land."))
+This is MY lucky machine."))
 
-DEFINE_DIALOG(DIALOG_033, 1, 6, 30, 200, _("\
-Ciao! You've reached\n\
-Princess Toadstool's\n\
-castle via a warp pipe.\n\
-Using the controller is a\n\
-piece of cake. Press [A] to\n\
-jump and [B] to attack.\n\
-Press [B] to read signs,\n\
-too. Use the Control Stick\n\
-in the center of the\n\
-controller to move Mario\n\
-around. Now, head for\n\
-the castle."))
+DEFINE_DIALOG(DIALOG_033, 1, 4, 30, 200, _("\
+I swear this machine is\n\
+cursed! I keep getting\n\
+triple 1ups... but I\n\
+keep losing money!"))
 
-DEFINE_DIALOG(DIALOG_034, 1, 6, 30, 200, _("\
-Good afternoon. The\n\
-Lakitu Bros., here,\n\
-reporting live from just\n\
-outside the Princess's\n\
-castle.\n\
+DEFINE_DIALOG(DIALOG_034, 1, 2, 30, 200, _("\
+C'mon, c'mon...\n\
+Just one more spin!\n\
+...\n\
 \n\
-Mario has just arrived\n\
-on the scene, and we'll\n\
-be filming the action live\n\
-as he enters the castle\n\
-and pursues the missing\n\
-Power Stars.\n\
-As seasoned cameramen,\n\
-we'll be shooting from the\n\
-recommended angle, but\n\
-you can change the\n\
-camera angle by pressing\n\
-the [C] Buttons.\n\
-If we can't adjust the\n\
-view any further, we'll\n\
-buzz. To take a look at\n\
-the surroundings, stop\n\
-and press [C]^.\n\
-\n\
-Press [A] to resume play.\n\
-Switch camera modes with\n\
-the [R] Button. Signs along\n\
-the way will review these\n\
-instructions.\n\
-\n\
-For now, reporting live,\n\
-this has been the\n\
-Lakitu Bros."))
+Welp, there goes my\n\
+retirement fund..."))
 
-DEFINE_DIALOG(DIALOG_035, 1, 5, 30, 200, _("\
-There are four camera, or\n\
-『[C],』 Buttons. Press [C]^\n\
-to look around using the\n\
-Control Stick.\n\
-\n\
-You'll usually see Mario\n\
-through Lakitu's camera.\n\
-It is the camera\n\
-recommended for normal\n\
-play.\n\
-You can change angles by\n\
-pressing [C]>. If you press\n\
-[R], the view switches to\n\
-Mario's camera, which\n\
-is directly behind him.\n\
-Press [R] again to return\n\
-to Lakitu's camera. Press\n\
-[C]| to see Mario from\n\
-afar, using either\n\
-Lakitu's or Mario's view."))
+DEFINE_DIALOG(DIALOG_035, 1, 1, 30, 200, _("\
+i hate my job."))
 
-DEFINE_DIALOG(DIALOG_036, 1, 5, 30, 200, _("\
-OBSERVATION PLATFORM\n\
-Press [C]^ to take a look\n\
-around. Don't miss\n\
-anything!\n\
-\n\
-Press [R] to switch to\n\
-Mario's camera. It\n\
-always follows Mario.\n\
-Press [R] again to switch\n\
-to Lakitu's camera.\n\
-Pause the game and\n\
-switch the mode to 『fix』\n\
-the camera in place while\n\
-holding [R]. Give it a try!"))
+DEFINE_DIALOG(DIALOG_036, 1, 2, 30, 200, _("\
+All on black, baby!\n\
+This is the one!"))
 
 DEFINE_DIALOG(DIALOG_037, 1, 2, 30, 200, _("\
 I win! You lose!\n\
@@ -482,32 +327,13 @@ Reacting to the Star\n\
 power, the door slowly\n\
 opens."))
 
-DEFINE_DIALOG(DIALOG_039, 1, 4, 30, 200, _("\
-No visitors allowed,\n\
-by decree of\n\
-the Big Bob-omb\n\
-\n\
-I shall never surrender my\n\
-Stars, for they hold the\n\
-power of the castle in\n\
-their glow.\n\
-They were a gift from\n\
-Bowser, the Koopa King\n\
-himself, and they lie well\n\
-hidden within my realm.\n\
-Not a whisper of their\n\
-whereabouts shall leave\n\
-my lips. Oh, all right,\n\
-perhaps one hint:\n\
-Heed the Star names at\n\
-the beginning of the\n\
-course.\n\
-//--The Big Bob-omb"))
+DEFINE_DIALOG(DIALOG_039, 1, 2, 30, 200, _("\
+First try, EEDIOT!\n\
+Team Red all the way!"))
 
-DEFINE_DIALOG(DIALOG_040, 1, 3, 30, 200, _("\
-Warning!\n\
-Cold, Cold Crevasse\n\
-Below!"))
+DEFINE_DIALOG(DIALOG_040, 1, 2, 30, 200, _("\
+One of these days I'll\n\
+get a win, just not today."))
 
 DEFINE_DIALOG(DIALOG_041, 1, 3, 30, 200, _("\
 I win! You lose!\n\
@@ -518,30 +344,51 @@ messin' with Koopa the\n\
 Quick.\n\
 Better luck next time!"))
 
-DEFINE_DIALOG(DIALOG_042, 1, 4, 30, 200, _("\
-Caution! Narrow Bridge!\n\
-Cross slowly!\n\
-\n\
-\n\
-You can jump to the edge\n\
-of the cliff and hang on,\n\
-and you can climb off the\n\
-edge if you move slowly.\n\
-When you want to let go,\n\
-either press [Z] or press\n\
-the Control Stick in the\n\
-direction of Mario's back.\n\
-To climb up, press Up on\n\
-the Control Stick. To\n\
-scurry up quickly, press\n\
-the [A] Button."))
+DEFINE_DIALOG(DIALOG_042, 1, 2, 30, 200, _("\
+I bet red, black wins.\n\
+I bet black, red wins.\n\
+I bet red, black wins!\n\
+I BET BLACK, RED WINS!\n\
+ARGH!!!"))
 
-DEFINE_DIALOG(DIALOG_043, 1, 5, 30, 200, _("\
-If you jump and hold the\n\
-[A] Button, you can hang on\n\
-to some objects overhead.\n\
-It's the same as grabbing\n\
-a flying bird!"))
+DEFINE_DIALOG(DIALOG_043, 1, 6, 30, 200, _("\
+Well, hey howdy there\n\
+Mario! Welcome to\n\
+Goombros Casino! We've\n\
+got a whole lot of games\n\
+to choose from here, from\n\
+slots to roulette and-\n\
+...Oh? You're after\n\
+something big? Trying to\n\
+get out of debt you say?\n\
+Well... normally we\n\
+wouldn't condone that\n\
+here, but for you Mario?\n\
+We'll let it slide.\n\
+Upstairs you'll find my\n\
+brother, and the entrance\n\
+to our most high profile,\n\
+high stakes game.\n\
+\n\
+He'll tell you more about\n\
+what you're getting into.\n\
+\n\
+\n\
+\n\
+\n\
+You also might spot a\n\
+sign, feel free to give\n\
+it a read if you wanna\n\
+learn who contributed to\n\
+allow this casino to get\n\
+made.\n\
+And Mario? Try not to\n\
+spiral down too far,\n\
+don't wanna see a world\n\
+renown hero kicked down\n\
+by gambling now do we?\n\
+\n\
+Keep your head on, Big M."))
 
 DEFINE_DIALOG(DIALOG_044, 1, 5, 95, 200, _("\
 Whooo's there? Whooo\n\
@@ -568,55 +415,145 @@ That's it for now. Press\n\
 [A] to let go. Okay,\n\
 bye byyyyyyeeee!"))
 
-DEFINE_DIALOG(DIALOG_046, 1, 5, 30, 200, _("\
-You have to master three\n\
-important jumping\n\
-techniques.\n\
-First try the Triple Jump.\n\
+DEFINE_DIALOG(DIALOG_046, 1, 6, 30, 200, _("\
+'Ere to play some big\n\
+boy games ey? Come to\n\
+the right place you\n\
+'ave, I'll explain the\n\
+rules.\n\
 \n\
-Run fast, then jump three\n\
-times, one, two, three.\n\
-If you time the jumps\n\
-right, you'll hop, skip,\n\
-then jump really high.\n\
-Next, go for distance\n\
-with the Long Jump. Run,\n\
-press [Z] to crouch then [A]\n\
-to jump really far.\n\
+So yer 1k in the hole,\n\
+yea? We're gonna cut ya\n\
+off at 10k, so that gives\n\
+ya 2 mins to complete the\n\
+course, fall and yer back\n\
+to the beginning.\n\
+Time ain't cheap lad,\n\
+what can I say. Ya\n\
+might find some coins\n\
+along the track, each\n\
+are worth 300 bucks,\n\
+or 4 seconds of extra\n\
+play, ain't much, but\n\
+it adds up, manage to\n\
+snag all 20 o' 'em and\n\
+that's an extra 1:20 o'\n\
+play.\n\
 \n\
-To do the Wall Kick, press\n\
-[A] to jump at a wall, then\n\
-jump again when you hit\n\
-the wall.\n\
+There ain't any\n\
+reward for collectin'\n\
+all 20, so just grab\n\
+'em when ya can.\n\
 \n\
-Got that? Triple Jump,\n\
-Long Jump, Wall Kick.\n\
-Practice, practice,\n\
-practice. You don't stand\n\
-a chance without them."))
+\n\
+'Course, all o' that\n\
+don't really matter if\n\
+ya fall off course.\n\
+We're shouting ya' first\n\
+game, since we're so nice\n\
+n' all, but fall off and\n\
+ya gotta pay up. It's a\n\
+1k penalty, or a 12.5\n\
+second time loss for\n\
+messin' up, in addition\n\
+to headin' back to start,\n\
+so don't be reckless.\n\
+Slide to the end, grab\n\
+some dough, don't fall\n\
+off, it's a simple\n\
+game really.\n\
+\n\
+\n\
+Them's the breaks kid,\n\
+reach the end and we'll\n\
+dish ya a nice 10k\n\
+payout. Best o' luck!"))
 
 DEFINE_DIALOG(DIALOG_047, 1, 2, 95, 200, _("\
 Hi! I'll prepare the\n\
 cannon for you!"))
 
-DEFINE_DIALOG(DIALOG_048, 1, 4, 30, 200, _("\
-Snow Mountain Summit\n\
-Watch for slippery\n\
-conditions! Please enter\n\
-the cottage first."))
+DEFINE_DIALOG(DIALOG_048, 1, 6, 30, 200, _("\
+Thanks for reading me!\n\
+This is my first rom-\n\
+hack and my first time\n\
+using blender, most of\n\
+the code, modelling and\n\
+design was done by me,\n\
+Poofca, but there were so\n\
+many people who helped me\n\
+along the way, so I've\n\
+listed them here.\n\
+\n\
+\n\
+Thank you to:\n\
+Sophie & Amaliclerk\n\
+For creating the textures\n\
+I used not created by me\n\
+nor ripped from other\n\
+games.\n\
+Thank you to:\n\
+Reonu, yoyotam3, MrComit,\n\
+Lucretia, ArcticJaguar725,\n\
+Wiseguy, someone2639\n\
+& frijoles y queso\n\
+\n\
+For creating the code I\n\
+blatanly stole, helping me\n\
+with my code and making\n\
+suggestions to improve my\n\
+code.\n\
+\n\
+Thank you to:\n\
+Everyone else in the\n\
+Simpleflips and Romhacking\n\
+.com discord servers for\n\
+being so welcoming and\n\
+friendly in assisting me\n\
+and allowing me to assist\n\
+them where I can.\n\
+\n\
+And thank you to:\n\
+You! For playing my hack,\n\
+I hope you enjoy. :)"))
 
-DEFINE_DIALOG(DIALOG_049, 1, 5, 30, 200, _("\
-Remember that tricky Wall\n\
-Kick jump? It's a\n\
-technique you'll have to\n\
-master in order to reach\n\
-high places.\n\
-Use it to jump from wall\n\
-to wall. Press the\n\
-Control Stick in the\n\
-direction you want to\n\
-bounce to gain momentum.\n\
-Practice makes perfect!"))
+DEFINE_DIALOG(DIALOG_049, 1, 6, 30, 200, _("\
+Kicked out huh? They\n\
+make it sound easy,\n\
+but the house always\n\
+wins. I'm in the same\n\
+boat, I've been living\n\
+out on these streets for\n\
+years, one slippery\n\
+slope and now I'm all\n\
+the way at rock bottom.\n\
+\n\
+\n\
+\n\
+But you're different,\n\
+Mario. You're the player\n\
+and this is your game,\n\
+not theirs. You get\n\
+another chance.\n\
+\n\
+Walk into the darkness\n\
+and you'll end up back\n\
+at the Casino's entrance,\n\
+time rewound, like\n\
+nothing ever happened.\n\
+\n\
+Not everyone gets a\n\
+chance like this Mario,\n\
+god knows I never will,\n\
+so take it.\n\
+\n\
+\n\
+I won't remember you if\n\
+you come back here, so\n\
+even though you'll know\n\
+what I say, if you see\n\
+me again, it'd be nice\n\
+to talk. See you around."))
 
 DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
 Hold [Z] to crouch and\n\
