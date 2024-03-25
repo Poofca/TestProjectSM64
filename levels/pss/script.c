@@ -51,7 +51,7 @@ const LevelScript level_pss_entry[] = {
 		MARIO_POS(0x01, 0, 0, 200, 0),
 		TERRAIN(pss_area_1_collision),
 		MACRO_OBJECTS(pss_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_CASINOPARK),
 		TERRAIN_TYPE(TERRAIN_GRASS),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */

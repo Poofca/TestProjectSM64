@@ -50,7 +50,7 @@ const LevelScript level_castle_courtyard_entry[] = {
 		WARP_NODE(0xF1, LEVEL_CASTLE_COURTYARD, 0x02, 0x0B, WARP_NO_CHECKPOINT),
 		INSTANT_WARP(0x00, 0x01, 594, 12073, -8687),
 		WARP_NODE(0x0B, LEVEL_CASTLE_GROUNDS, 0x02, 0x0B, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x0C, LEVEL_SA, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0C, LEVEL_VCUTM, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_NONE, 3765, -1201, 1861, 0, 0, 0, 0x00050000, bhvTtmBowlingBallSpawner),
 		OBJECT(MODEL_YELLOW_COIN, -897, 6106, -6225, 0, 0, 0, 0x00000000, bhvYellowCoin),
 		OBJECT(MODEL_YELLOW_COIN, -1993, 2919, -204, 0, 0, 0, 0x00000000, bhvYellowCoin),
@@ -66,7 +66,7 @@ const LevelScript level_castle_courtyard_entry[] = {
 		OBJECT(MODEL_NONE, -2617, 9627, -657, 0, -180, 0, 0x000A0000, bhvInstantActiveWarp),
 		TERRAIN(castle_courtyard_area_2_collision),
 		MACRO_OBJECTS(castle_courtyard_area_2_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_CASINOPARK),
 		TERRAIN_TYPE(TERRAIN_SLIDE),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
@@ -76,7 +76,7 @@ const LevelScript level_castle_courtyard_entry[] = {
 		WARP_NODE(0x0A, LEVEL_CASTLE_COURTYARD, 0x02, 0x0A, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF0, LEVEL_ENDING, 0x01, 0xFF, WARP_NO_CHECKPOINT),
 		WARP_NODE(0xF1, LEVEL_CASTLE_COURTYARD, 0x02, 0x0B, WARP_NO_CHECKPOINT),
-		WARP_NODE(0x0C, LEVEL_SA, 0x01, 0x0A, WARP_NO_CHECKPOINT),
+		WARP_NODE(0x0C, LEVEL_VCUTM, 0x01, 0x0A, WARP_NO_CHECKPOINT),
 		OBJECT(MODEL_YELLOW_COIN, 5854, 7595, 3496, 0, 0, 0, 0x00000000, bhvYellowCoin),
 		OBJECT(MODEL_YELLOW_COIN, -2182, 4231, 5709, 0, 0, 0, 0x00000000, bhvYellowCoin),
 		OBJECT(MODEL_YELLOW_COIN, -2303, 3441, 6360, 0, 0, 0, 0x00000000, bhvYellowCoin),
@@ -91,7 +91,7 @@ const LevelScript level_castle_courtyard_entry[] = {
 		OBJECT(MODEL_NONE, 5800, 9841, -2194, 0, 0, 0, 0x000A0000, bhvAirborneWarp),
 		TERRAIN(castle_courtyard_area_1_collision),
 		MACRO_OBJECTS(castle_courtyard_area_1_macro_objs),
-		SET_BACKGROUND_MUSIC(0x00, SEQ_LEVEL_GRASS),
+		SET_BACKGROUND_MUSIC(0x00, SEQ_CASINOPARK),
 		TERRAIN_TYPE(TERRAIN_SLIDE),
 		/* Fast64 begin persistent block [area commands] */
 		/* Fast64 end persistent block [area commands] */
