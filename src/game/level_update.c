@@ -1034,9 +1034,6 @@ s32 play_mode_normal(void) {
         area_update_objects();
     }
 #else
-    if ((gHudDisplay.timer <= 0) || (gHudDisplay.timer >= 17999)){
-        gHudDisplay.timer = 0;
-    }
     if (sTimerRunning && gHudDisplay.timer < 17999) {
         gHudDisplay.timer++;
     }
@@ -1434,5 +1431,11 @@ s32 lvl_set_current_level(UNUSED s16 initOrUpdate, s32 levelNum) {
  */
 s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) {
     play_sound(SOUND_MENU_THANK_YOU_PLAYING_MY_GAME, gGlobalSoundSource);
+    return TRUE;
+}
+
+s8 print_winnings_text() {
+    s16 winnings_val = (10000 - (gHudDisplay.timer * (5.f/2.f)));
+    print_text_fmt_int(10, 10, "%d", winnings_val);
     return TRUE;
 }

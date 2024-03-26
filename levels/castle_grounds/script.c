@@ -78,7 +78,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(MODEL_KOOPA_WITH_SHELL, -510, 828, 930, 0, -90, 0, (16 << 16), bhvKoopaNPC),
 		OBJECT(MODEL_FLYGUY, 1739, 924, 15, 0, 90, 0, (34 << 16), bhvFlyGuyNPC),
 		OBJECT(MODEL_KOOPA_WITH_SHELL, 495, 924, 1384, 0, 112, 0, (40 << 16), bhvKoopaNPC),
-		OBJECT(MODEL_WOODEN_SIGNPOST, 0, 828, 2470, 0, -180, 0, (48 << 16), bhvMessagePanel),
+		OBJECT(MODEL_WOODEN_SIGNPOST, 0, 828, 2343, 0, -180, 0, (48 << 16), bhvMessagePanel),
 		OBJECT(MODEL_NONE, -4, -175, 1677, 0, -180, 0, 0x000A0000, bhvAirborneWarp),
 		MARIO_POS(0x01, -180, -4, -175, 1677),
 		TERRAIN(castle_grounds_area_1_collision),

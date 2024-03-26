@@ -115,7 +115,7 @@ struct HudDisplay {
     /*0x06*/ s16 wedges;
     /*0x08*/ s16 keys;
     /*0x0A*/ s16 flags;
-    /*0x0C*/ u16 timer;
+    /*0x0C*/ s16 timer;
 #ifdef BREATH_METER
              u16 breath;
 #endif
@@ -180,6 +180,7 @@ s32 lvl_init_or_update(                  s16 initOrUpdate, UNUSED s32 levelNum);
 s32 lvl_init_from_save_file(      UNUSED s16 initOrUpdate,        s32 levelNum);
 s32 lvl_set_current_level(        UNUSED s16 initOrUpdate,        s32 levelNum);
 s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum);
+s8 print_winnings_text();
 void basic_update(void);
 
 #endif // LEVEL_UPDATE_H

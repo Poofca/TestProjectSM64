@@ -68,7 +68,7 @@ extern Vtx doubledowndl_doubledown_mesh_vtx_2[8];
 extern Gfx doubledowndl_doubledown_mesh_tri_2[];
 extern Vtx doubledowndl_doubledown_mesh_vtx_3[16];
 extern Gfx doubledowndl_doubledown_mesh_tri_3[];
-extern Vtx doubledowndl_doubledown_mesh_vtx_4[144];
+extern Vtx doubledowndl_doubledown_mesh_vtx_4[87];
 extern Gfx doubledowndl_doubledown_mesh_tri_4[];
 extern Vtx doubledowndl_doubledown_mesh_vtx_5[8];
 extern Gfx doubledowndl_doubledown_mesh_tri_5[];

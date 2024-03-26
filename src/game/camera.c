@@ -453,6 +453,10 @@ CameraTransition sModeTransitions[] = {
 extern u8 sDanceCutsceneIndexTable[][4];
 extern u8 sZoomOutAreaMasks[];
 
+s8 LakituTextTrigger = FALSE;
+s8 LakituTextInit = FALSE;
+u8 LakituLoop = 0;
+
 /**
  * Starts a camera shake triggered by an interaction
  */
@@ -2884,9 +2888,19 @@ void update_camera(struct Camera *c) {
             if (gPlayer1Controller->buttonPressed & R_TRIG) {
                 if (set_cam_angle(0) == CAM_ANGLE_LAKITU) {
                     set_cam_angle(CAM_ANGLE_MARIO);
+                    if (LakituTextTrigger == FALSE) {
+                        LakituTextInit = TRUE;
+                    }
                 } else {
                     set_cam_angle(CAM_ANGLE_LAKITU);
                 }
+            }
+        }
+        if ((LakituTextTrigger == FALSE) && (LakituTextInit == TRUE)) {
+            print_text(10, 20, "LAKITU CA. IS RECCO.ENDED");
+            LakituLoop++;
+            if (LakituLoop > 89) {
+                LakituTextTrigger = TRUE;
             }
         }
         play_sound_if_cam_switched_to_lakitu_or_mario();

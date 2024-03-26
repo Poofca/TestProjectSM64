@@ -84,13 +84,13 @@ it, fair and square!"))
 
 DEFINE_DIALOG(DIALOG_008, 1, 4, 30, 200, _("\
 This damn Pink Guy...\n\
-He looks so happy, he\n\
-just thinks that is\n\
-something he can, huh?\n\
+He looks so happy,\n\
+he's mocking me.\n\
+Why, Pink Guy, why?\n\
 He's taken so much\n\
 from me, all of my\n\
-time, it's so much\n\
-later in the day now."))
+time, it's so late\n\
+in the day now."))
 
 DEFINE_DIALOG(DIALOG_009, 1, 5, 30, 200, _("\
 Long time, no see! Wow,\n\
@@ -328,7 +328,9 @@ power, the door slowly\n\
 opens."))
 
 DEFINE_DIALOG(DIALOG_039, 1, 2, 30, 200, _("\
-First try, EEDIOT!\n\
+C'mon red, C'mon red...\n\
+\n\
+Yes! First try, EEDIOT!\n\
 Team Red all the way!"))
 
 DEFINE_DIALOG(DIALOG_040, 1, 2, 30, 200, _("\
@@ -464,6 +466,12 @@ off, it's a simple\n\
 game really.\n\
 \n\
 \n\
+Oh, and if I were in\n\
+your goomba shoes,\n\
+I'd rely on your little\n\
+Lakitu friend's camera\n\
+instead o' your own for\n\
+this course.\n\
 Them's the breaks kid,\n\
 reach the end and we'll\n\
 dish ya a nice 10k\n\
@@ -494,15 +502,23 @@ nor ripped from other\n\
 games.\n\
 Thank you to:\n\
 Reonu, yoyotam3, MrComit,\n\
-Lucretia, ArcticJaguar725,\n\
+Lucretia, Arthurtilly,\n\
+ArcticJaguar725,\n\
 Wiseguy, someone2639\n\
 & frijoles y queso\n\
-\n\
 For creating the code I\n\
 blatanly stole, helping me\n\
-with my code and making\n\
+with my code or making\n\
 suggestions to improve my\n\
 code.\n\
+\n\
+Thank you to:\n\
+robotniksineffableusername\n\
+machin\n\
+for helping to make sure\n\
+my hack plays well and\n\
+giving me advice for\n\
+improving my level design.\n\
 \n\
 Thank you to:\n\
 Everyone else in the\n\
@@ -512,6 +528,7 @@ being so welcoming and\n\
 friendly in assisting me\n\
 and allowing me to assist\n\
 them where I can.\n\
+\n\
 \n\
 And thank you to:\n\
 You! For playing my hack,\n\

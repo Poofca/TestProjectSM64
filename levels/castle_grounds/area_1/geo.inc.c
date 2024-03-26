@@ -24,7 +24,7 @@ const GeoLayout castle_grounds_area_1_geo[] = {
 		GEO_TRANSLATE_ROTATE_WITH_DL(LAYER_OPAQUE, 1084, -112, 1489, 0, -165, 0, castle_grounds_dl_Playing_Card_015_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, -834, 902, 913, castle_grounds_dl_PoolTable_mesh_layer_1),
 		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 903, 970, 1169, castle_grounds_dl_RouletteTablePattern_mesh_layer_1),
-		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 985, 968, 488, castle_grounds_dl_RouletteWheel_mesh_layer_1),
+		GEO_TRANSLATE_NODE_WITH_DL(LAYER_OPAQUE, 985, 969, 488, castle_grounds_dl_RouletteWheel_mesh_layer_1),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, castle_grounds_dl_SlotMachineDesign1_mesh_layer_1),
 		GEO_DISPLAY_LIST(LAYER_TRANSPARENT, castle_grounds_dl_SlotMachineDesign1_mesh_layer_5),
 		GEO_DISPLAY_LIST(LAYER_OPAQUE, castle_grounds_dl_SlotMachineDesign1_001_mesh_layer_1),
