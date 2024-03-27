@@ -2897,7 +2897,7 @@ void update_camera(struct Camera *c) {
             }
         }
         if ((LakituTextTrigger == FALSE) && (LakituTextInit == TRUE)) {
-            print_text(10, 20, "LAKITU CA. IS RECCO.ENDED");
+            print_text(10, 20, "LAKITU CA. IS RECO..ENDED");
             LakituLoop++;
             if (LakituLoop > 89) {
                 LakituTextTrigger = TRUE;

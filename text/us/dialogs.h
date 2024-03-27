@@ -206,9 +206,10 @@ Now " SCRAM "\n\
 and don't come back!\n\
 Gwa ha ha!"))
 
-DEFINE_DIALOG(DIALOG_022, 1, 2, 95, 200, _("\
-You need a key to open\n\
-this door."))
+DEFINE_DIALOG(DIALOG_022, 1, 3, 95, 200, _("\
+You can't leave just\n\
+yet, you need the\n\
+money, remember?"))
 
 DEFINE_DIALOG(DIALOG_023, 1, 3, 95, 200, _("\
 This key doesn't fit!\n\
@@ -361,7 +362,7 @@ got a whole lot of games\n\
 to choose from here, from\n\
 slots to roulette and-\n\
 ...Oh? You're after\n\
-something big? Trying to\n\
+something 』big『? Trying to\n\
 get out of debt you say?\n\
 Well... normally we\n\
 wouldn't condone that\n\
@@ -382,8 +383,8 @@ You also might spot a\n\
 sign, feel free to give\n\
 it a read if you wanna\n\
 learn who contributed to\n\
-allow this casino to get\n\
-made.\n\
+allow this casino to be\n\
+here today.\n\
 And Mario? Try not to\n\
 spiral down too far,\n\
 don't wanna see a world\n\
@@ -482,7 +483,13 @@ Hi! I'll prepare the\n\
 cannon for you!"))
 
 DEFINE_DIALOG(DIALOG_048, 1, 6, 30, 200, _("\
-Thanks for reading me!\n\
+\n\
+     Goombros. Casino\n\
+ Founded in mushroom year\n\
+1886, by the Goomfather.\n\
+\n\
+\n\
+Credits:\n\
 This is my first rom-\n\
 hack and my first time\n\
 using blender, most of\n\
@@ -532,7 +539,14 @@ them where I can.\n\
 \n\
 And thank you to:\n\
 You! For playing my hack,\n\
-I hope you enjoy. :)"))
+I hope you enjoy. :)\n\
+\n\
+\n\
+\n\
+Btw, my best score is\n\
+$10515, let me know if\n\
+you beat that, I'd be\n\
+very impressed."))
 
 DEFINE_DIALOG(DIALOG_049, 1, 6, 30, 200, _("\
 Kicked out huh? They\n\

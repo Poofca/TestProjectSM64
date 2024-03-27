@@ -1434,8 +1434,8 @@ s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) 
     return TRUE;
 }
 
-s8 print_winnings_text() {
-    s16 winnings_val = (10000 - (gHudDisplay.timer * (5.f/2.f)));
-    print_text_fmt_int(10, 10, "%d", winnings_val);
+s16 print_winnings_text() {
+    s16 winnings_val = (gHudDisplay.timer * (5.f/2.f));
+    print_text_fmt_int(10, 10, "%d", (10000 - winnings_val));
     return TRUE;
 }
