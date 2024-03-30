@@ -610,6 +610,18 @@ s16 music_unchanged_through_warp(s16 arg) {
     return unchanged;
 }
 
+void initiate_warp_clone(s16 destLevel, s16 destArea, s16 destWarpNode, s32 warpFlags) {
+    sWarpDest.type = WARP_TYPE_CHANGE_LEVEL;
+    sWarpDest.levelNum = destLevel;
+    sWarpDest.areaIdx = destArea;
+    sWarpDest.nodeId = destWarpNode;
+    sWarpDest.arg = warpFlags;
+    gMarioState->forwardVel = 0.0f;
+    gMarioState->slideVelX = 0.0f;
+    gMarioState->slideVelZ = -27.0f;
+    gMarioState->vel[1] = 0.0f;
+    
+}
 /**
  * Set the current warp type and destination level/area/node.
  */
@@ -1046,6 +1058,11 @@ s32 play_mode_normal(void) {
         play_transition(WARP_TRANSITION_FADE_INTO_COLOR, 0x14, 0x00, 0x00, 0x00);
         FailStateTriggered = TRUE;
     }
+
+    if ((gHudDisplay.stars > 0) && (gMarioState->controller->buttonPressed & L_TRIG) && (sTimerRunning)) {
+        initiate_warp_clone(LEVEL_CASTLE_COURTYARD, 0x02, 0x0A, NULL);
+    }
+
     area_update_objects();
 #endif
     update_hud_values();
@@ -1436,6 +1453,6 @@ s32 lvl_play_the_end_screen_sound(UNUSED s16 initOrUpdate, UNUSED s32 levelNum) 
 
 s16 print_winnings_text() {
     s16 winnings_val = (gHudDisplay.timer * (5.f/2.f));
-    print_text_fmt_int(10, 10, "%d", (10000 - winnings_val));
+    print_text_fmt_int(190, 14, "%d", (10000 - winnings_val));
     return TRUE;
 }

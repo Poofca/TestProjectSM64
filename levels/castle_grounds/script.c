@@ -73,6 +73,7 @@ const LevelScript level_castle_grounds_entry[] = {
 		OBJECT(MODEL_GOOMBA, -1155, -159, 1712, 0, 135, 0, (15 << 16), bhvGoombaNPC),
 		OBJECT(MODEL_GOOMBA, -762, 924, 2118, 0, -30, 0, (32 << 16), bhvGoombaNPC),
 		OBJECT(MODEL_GOOMBA, 913, 924, 1627, 0, -180, 0, (42 << 16), bhvGoombaNPC),
+		OBJECT(MODEL_GOOMBA, 787, 315, -2997, 0, -135, 0, (50 << 16), bhvGoombaNPC),
 		OBJECT(MODEL_KOOPA_WITH_SHELL, -1745, -171, 612, 0, -90, 0, 0x00000000, bhvKoopaNPC),
 		OBJECT(MODEL_KOOPA_WITH_SHELL, -1374, 828, 612, 0, 60, 0, (19 << 16), bhvKoopaNPC),
 		OBJECT(MODEL_KOOPA_WITH_SHELL, -1374, 828, 1359, 0, 120, 0, (18 << 16), bhvKoopaNPC),

@@ -178,8 +178,7 @@ KOOPA POOL!!!\n\
 WOO!!!"))
 
 DEFINE_DIALOG(DIALOG_017, 1, 1, 30, 200, _("\
-WE ARE KOOPAS!!!\n\
-WE PLAY POOL!!!"))
+."))
 
 DEFINE_DIALOG(DIALOG_018, 1, 4, 30, 200, _("\
 Guys please calm down\n\
@@ -357,7 +356,7 @@ ARGH!!!"))
 DEFINE_DIALOG(DIALOG_043, 1, 6, 30, 200, _("\
 Well, hey howdy there\n\
 Mario! Welcome to\n\
-Goombros Casino! We've\n\
+Goombros. Casino! We've\n\
 got a whole lot of games\n\
 to choose from here, from\n\
 slots to roulette and-\n\
@@ -508,9 +507,9 @@ I used not created by me\n\
 nor ripped from other\n\
 games.\n\
 Thank you to:\n\
-Reonu, yoyotam3, MrComit,\n\
-Lucretia, Arthurtilly,\n\
-ArcticJaguar725,\n\
+Reonu, Arthurtilly,\n\
+yoyotam3, Lucretia,\n\
+MrComit, ArcticJaguar725,\n\
 Wiseguy, someone2639\n\
 & frijoles y queso\n\
 For creating the code I\n\
@@ -521,8 +520,9 @@ code.\n\
 \n\
 Thank you to:\n\
 robotniksineffableusername\n\
-machin\n\
-for helping to make sure\n\
+machin aka ZT, Makimoke\n\
+& AndrewSM64\n\
+For helping to make sure\n\
 my hack plays well and\n\
 giving me advice for\n\
 improving my level design.\n\
@@ -536,17 +536,24 @@ friendly in assisting me\n\
 and allowing me to assist\n\
 them where I can.\n\
 \n\
-\n\
 And thank you to:\n\
 You! For playing my hack,\n\
 I hope you enjoy. :)\n\
 \n\
-\n\
-\n\
-Btw, my best score is\n\
-$10515, let me know if\n\
-you beat that, I'd be\n\
-very impressed."))
+My Best Score: $11065\n\
+Let me know if you beat it!\n\
+BONUS: If you beat the\n\
+slide and then replay the\n\
+game, it'll show your\n\
+current score under the\n\
+debt timer. In addition\n\
+you can press 'L' during\n\
+the course and instantly\n\
+soft reset the level and\n\
+the debt counter.\n\
+Hopefully these additions\n\
+make getting better\n\
+scores easier & more fun!"))
 
 DEFINE_DIALOG(DIALOG_049, 1, 6, 30, 200, _("\
 Kicked out huh? They\n\
@@ -586,19 +593,20 @@ what I say, if you see\n\
 me again, it'd be nice\n\
 to talk. See you around."))
 
-DEFINE_DIALOG(DIALOG_050, 1, 4, 30, 200, _("\
-Hold [Z] to crouch and\n\
-slide down a slope.\n\
-Or press [Z] while in the\n\
-air to Pound the Ground!\n\
-If you stop, crouch, then\n\
-jump, you'll do a\n\
-Backward Somersault!\n\
-Got that?\n\
-There's more. Crouch and\n\
-then jump to do a\n\
-Long Jump! Or crouch and\n\
-walk to...never mind."))
+DEFINE_DIALOG(DIALOG_050, 1, 6, 30, 200, _("\
+Okay so I think the\n\
+strat is that if you\n\
+take the 500k and then\n\
+offer more and more\n\
+increasing amounts of\n\
+money to Jay-Z then\n\
+he'll eventually have\n\
+to go to dinner with\n\
+you and you get both\n\
+the left over money\n\
+and the priceless...\n\
+...\n\
+-You back away slowly-"))
 
 DEFINE_DIALOG(DIALOG_051, 1, 6, 30, 200, _("\
 Climbing's easy! When you\n\

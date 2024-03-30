@@ -3473,3 +3473,4 @@ const f32 intro_seg7_table_scale_2[] = {
 };
 
 #include "levels/intro/doubledowndl/model.inc.c"
+#include "levels/intro/titledl/model.inc.c"

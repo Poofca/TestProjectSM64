@@ -462,7 +462,7 @@ void render_hud_timer(void) {
         case LANGUAGE_GERMAN:  print_text(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(150), 185,  "ZEIT"); break;
     }
 #else
-    //print_small_text(16, 16, "DEBT:", PRINT_TEXT_ALIGN_LEFT, PRINT_ALL, FONT_VANILLA);
+    print_small_text(16, 16, "TEST", PRINT_TEXT_ALIGN_LEFT, PRINT_ALL, FONT_VANILLA);
 #endif
 
     //print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 185, "%0d", timerMins);
@@ -480,6 +480,11 @@ void render_hud_timer(void) {
     } else {
         print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(75), 200, "J");
         print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(87), 200, "VYYYY");
+    }
+
+    if (gHudDisplay.stars > 0) {
+        print_text(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(10), 180, "SCORE:");
+        print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_LEFT_EDGE(75), 180, "%d", (10000 - timerDebtNum));
     }
     //print_text_fmt_int(GFX_DIMENSIONS_RECT_FROM_RIGHT_EDGE(91), 165, "%d", timerValFrames);
 

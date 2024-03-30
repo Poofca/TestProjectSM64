@@ -28,4 +28,6 @@ extern const LevelScript script_intro_splash_screen[];
 
 #include "levels/intro/doubledowndl/header.h"
 
+#include "levels/intro/titledl/header.h"
+
 #endif
